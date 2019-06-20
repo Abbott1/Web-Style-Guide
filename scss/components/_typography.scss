@@ -1,0 +1,29 @@
+/*
+ .container
+*/
+
+.headline--secondary {
+    color: grey;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.headline--primary {
+    padding-left: 25px;
+    color: rgba(76, 183, 178, 1);
+    font-size: 32px;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #04c4ff;
+}
+
+.blockquote {
+    font-size: 21px;
+    margin-bottom: 30px;
+    padding-left: 9px;
+    border-left: 7px rgba(76, 183, 178, 1) solid;
+    border-radius: 4px;
+}

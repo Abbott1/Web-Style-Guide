@@ -1,0 +1,29 @@
+/*
+  .container
+    .grid__row
+    .grid__col--2
+    .grid__col--5
+    .grid__col--6
+    .grid__col--7
+    .grid__col--8
+    .grid__col--9
+    .grid__col--10
+    .grid__col--11
+    .centered
+    .theme__colors
+*/
+
+.grid__col--3 {
+    display: flex;
+    justify-content: center;
+}
+
+.grid__col--12 {
+  padding: 50px 2px;
+}
+
+.grid__col--4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
