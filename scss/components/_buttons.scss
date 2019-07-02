@@ -6,3 +6,9 @@
     .btn--info
     .theme__colors
 */
+
+.btn--default {
+  &.theme__colors {
+    @include main-btn; 
+  }  
+}
