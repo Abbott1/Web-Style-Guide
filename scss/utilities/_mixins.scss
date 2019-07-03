@@ -1,5 +1,18 @@
 @mixin main-btn {
     color: white; 
     background: #52bab3;
-    border-radius: 3px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 15px 32px;
+    width: 90%;
+    font-weight: bolder;
+}
+
+@mixin main-grid {
+    @include main-btn;
+    padding: 10px 21px;
+    color: grey;
+    text-align: left;
 }
