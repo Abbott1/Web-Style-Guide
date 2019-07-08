@@ -16,3 +16,17 @@
     color: grey;
     text-align: left;
 }
+
+@mixin center-mobile {
+    min-width: $mobile;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin center-desktop {
+    min-width: $desktop;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

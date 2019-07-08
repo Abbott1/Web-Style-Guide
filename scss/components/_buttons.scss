@@ -9,47 +9,57 @@
 
 .btn--default {
   &.theme__colors {
-    @include main-btn; 
-    padding: 10px 5px;
-    width: 95%;
-    background: $sec-color;
-    margin: 10px;
-    text-transform: uppercase;
-  } 
+  @media (min-width: $mobile) {    
+      @include main-btn; 
+      padding: 10px 5px;
+      width: 95%;
+      background: $sec-color;
+      margin: 10px;
+      text-transform: uppercase;
+    }
+  }   
 }
 
 .btn--success {
-  @include main-btn;
-  padding: 10px 5px;
-  width: 95%;
-  background: green;
-  margin: 10px;
-  text-transform: uppercase;
+  @media (min-width: $mobile) {  
+    @include main-btn;
+    padding: 10px 5px;
+    width: 95%;
+    background: green;
+    margin: 10px;
+    text-transform: uppercase;
+  } 
 } 
 
 .btn--error {
-  @include main-btn;
-  padding: 10px 5px;
-  width: 95%;
-  background: rgba(255, 100, 100, 0.7);
-  margin: 10px;
-  text-transform: uppercase;
+  @media (min-width: $mobile) {
+    @include main-btn;
+    padding: 10px 5px;
+    width: 95%;
+    background: rgba(255, 100, 100, 0.7);
+    margin: 10px;
+    text-transform: uppercase;
+  }
 }
 
-.btn--warning {
-  @include main-btn;
-  padding: 10px 5px;
-  width: 95%;
-  background: rgba(255, 114, 0, 1);
-  margin: 10px;
-  text-transform: uppercase;
-}
+.btn--warning { 
+  @media (min-width: $mobile) {
+    @include main-btn;
+    padding: 10px 5px;
+    width: 95%;
+    background: rgba(255, 114, 0, 1);
+    margin: 10px;
+    text-transform: uppercase;
+  }  
+}  
 
 .btn--info {
-  @include main-btn;
-  padding: 10px 5px;
-  width: 95%;
-  background: rgba(124, 79, 156, 0.87);
-  margin: 10px;
-  text-transform: uppercase;
+  @media (min-width: $mobile) {
+    @include main-btn;
+    padding: 10px 5px;
+    width: 95%;
+    background: rgba(124, 79, 156, 0.87);
+    margin: 10px;
+    text-transform: uppercase;
+  }
 }

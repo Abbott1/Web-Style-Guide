@@ -16,57 +16,70 @@
 .grid__col--3 {
     display: flex;
     justify-content: center;
+    @media (min-width: $mobile) {
     &.theme__colors {
       @include main-grid;
       background: plum;
     }
+
+  }
 }
 
-.grid__col--12 {
-  padding: 50px 2px;
-  &.theme__colors {
-    @include main-grid;
-    background: rgb(102, 205, 170);
-    
-  }
+.grid__col--12 {  
+  @media (min-width: $mobile) { 
+    &.theme__colors {
+      @include main-grid;
+      background: rgb(102, 205, 170);
+      margin-bottom: 35px;
+    }
+  } 
 }
 
 .grid__col--4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  &.theme__colors {
-    @include main-grid;
-    background: $main-color;
+  @media (min-width: $mobile) {
+    &.theme__colors {
+      @include main-grid;
+      background: $main-color;
+    }
   }
 }
 
 .grid__col--6 {
-
-  &.theme__colors {
-    @include main-grid;
-    background: turquoise;
-    
+  @media (min-width: $mobile) {
+    &.theme__colors {
+      @include main-grid;
+      background: turquoise;
+      margin-bottom: 7px;
+    }
   }
 }
 
 .grid__col--5 {
-  &.theme__colors {
-    @include main-grid;
-    background: mediumseagreen;
-  }
+  @media (min-width: $mobile) {
+    &.theme__colors {
+      @include main-grid;
+      background: mediumseagreen;
+    }
+  }  
 }
 
 .grid__col--7 {
-  &.theme__colors {
-    @include main-grid;
-    background: tomato;
-  }
+  @media (min-width: $mobile) {
+    &.theme__colors {
+      @include main-grid;
+      background: tomato;
+    }
+  }  
 }
 
 .grid__col--8 {
-  &.theme__colors {
-    @include main-grid;
-    background: orangered;
-  }
+  @media (min-width: $mobile) {
+    &.theme__colors {
+      @include main-grid;
+      background: orangered;
+    }
+  }  
 }
