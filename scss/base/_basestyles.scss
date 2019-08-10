@@ -1,18 +1,15 @@
 * {
     font-family: $main-font, $secondary-font;
-}
+    @include media-q (mobile) {
+        @include mobile-cont;
+    }
 
-div {
-    border: 1px solid greenyellow;
-}
+    @include media-q (desktop) {
+        @include desktop-cont;
+    }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-}
-
-.nav {
-    margin: 0;
-    padding: 0;
+    div {
+        border: 1px solid greenyellow;
+        width: 100%;
+    }
 }

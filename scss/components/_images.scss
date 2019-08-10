@@ -1,11 +1,20 @@
 
 .img--logo {
     padding: 20px;
+    @include media-q (mobile) {
+        width: 100%;
+    }
 }
 
 .img--avatar {
     padding-left: 27%;
     padding-top: 20px;
+    @include media-q (mobile) {
+        width: 50%;
+    }
+    @include media-q (desktop) {
+        width: 34%;
+    }
 }
 
 .img--frame {
@@ -13,5 +22,12 @@
     display: block;
     justify-content: center;
     padding: 6px;
+    @include media-q (mobile) {
+        width: 96%;
+    }
+    @include media-q (desktop) {
+        width: 80%;
+       // float: right;
+    }
 }
 

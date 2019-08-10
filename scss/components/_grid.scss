@@ -13,24 +13,49 @@
     .theme__colors
 */
 
+
+
 .grid__row {
   margin-top: 35px;
+  @include media-q (mobile) {
+    width: 100%;
+  }
+  @include media-q (desktop) {
+    width: 100%;
+    display: flex;
+  }
 }
 
 .grid__col--3 {
-  display: flex;
-  justify-content: center;
+ @include flex-center;
     &.theme__colors {
       @include main-grid;
       background: plum;
+      width: 95%;
     }
+    @include media-q (mobile) {
+      width: 100%;
+  }  
+  @include media-q (desktop) {
+    width: 20%;
+    padding-left: 10px;
+  }          
 }
 
 .grid__col--12 {   
   &.theme__colors {
     @include main-grid;
     background: lighten($color: rgb(102, 205, 170), $amount: 10%);
+    width: 95%;
+    @include media-q (desktop) {
+      display: flex;
+      width: 99%;
+      text-align: center;   
+    }
   }
+      @include media-q (mobile) {
+        width: 100%;
+    }
 } 
 
 
@@ -39,6 +64,10 @@
   &.theme__colors {
     @include main-grid;
     background: $sec-color;
+    width: 95%;
+  }
+  @include media-q (mobile) {
+    width: 100%;
   }
 }
 
@@ -46,7 +75,11 @@
   &.theme__colors {
     @include main-grid;
     background: $main-color;
+    width: 95%;
   }
+  @include media-q (mobile) {
+    width: 100%;
+}
 }
 
 .grid__col--5 {
@@ -54,12 +87,21 @@
     @include main-grid;
     background: darken($color: rgb(151, 216, 180), $amount: 10%);
   }
+  @include media-q (mobile) {
+    width: 95%;
+}
 }  
 
 .grid__col--7 {
   &.theme__colors {
     @include main-grid;
     background: lighten($color: rgb(255, 99, 71), $amount: 10%);
+    @include media-q (desktop) {
+      width: 99%;
+    }
+  }
+  @include media-q (mobile) {
+    width: 95%;
   }
 }  
 
@@ -68,4 +110,21 @@
     @include main-grid;
     background: lighten($color: rgb(255, 69, 0), $amount: 20%);
   }
-}  
+  @include media-q (mobile) {
+    width: 95%;
+  }
+  @include media-q (desktop) {
+    margin-right: 10px;
+    width: 150%; 
+  }
+} 
+
+.grid__col--9 {
+  @include media-q (mobile) {
+    width: 100%;
+  }
+  @include media-q (desktop) {
+    width: 79%;
+  }
+}
+
