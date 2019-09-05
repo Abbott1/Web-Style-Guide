@@ -1,8 +1,11 @@
+//Fonts
 $main-font: sans-serif, 'Helvetica Arial';
 $secondary-font: sans-serif, 'Helvetica Arial';
 
+// Colors
 $main-color: #05aefd; 
 $sec-color: rgba(100, 255, 255, 0.66);
-
-
-
+$light-green: lightgreen;
+$error-btn-red: rgba(255, 100, 100, 0.7);
+$warning-btn-red: lighten($color: rgb(255, 114, 0), $amount: 10%);
+$info-btn-purple: rgba(124, 79, 156, 0.87)

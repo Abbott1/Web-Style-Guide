@@ -4,6 +4,9 @@
     @include media-q (mobile) {
         width: 100%;
     }
+      @include media-q (desktop) {
+        width: 50%;
+    }
 }
 
 .img--avatar {
@@ -13,7 +16,7 @@
         width: 50%;
     }
     @include media-q (desktop) {
-        width: 34%;
+        width: 37%;
     }
 }
 
@@ -26,8 +29,8 @@
         width: 96%;
     }
     @include media-q (desktop) {
-        width: 80%;
-       // float: right;
+        width: 79%;
+        float: right;
     }
 }
 

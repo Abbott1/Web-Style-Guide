@@ -48,10 +48,10 @@
     .container {
         display: flex;
         flex-direction: column;
-        padding: 0px 6%;
+        padding: 0px 12%;
         
     .nav {
-        margin: 0;
+        margin: 23px;
         padding: 0;
         }
     }
@@ -83,14 +83,15 @@
     display: flex;
     list-style-type: none; 
     display: inline-block;
+    
   a {
         display: block;
-        width: 50%;
-        margin: 0;
+        width: 60%;
+        margin-top: 10px;
         text-decoration: none;
         color: grey;
         text-align: center;
-        padding: 15px 32px;
+        padding: 8px 8px;
         font-weight: bolder;
         &:hover {
             color: white; 
@@ -98,7 +99,16 @@
             border-radius: 3px;
         }
     }     
-}   
+}
+
+@mixin bottom-border {
+    border: none;
+    border-bottom: 5px #52bab3 solid;
+    margin-left: 20px;
+    margin-bottom: 13px;
+    padding: 15px; 
+    height: 20px; 
+}
 
 // Media queries
 

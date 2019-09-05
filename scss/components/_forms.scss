@@ -3,18 +3,20 @@
     display: none;
 }
 
+.form {
+    @include media-q (desktop) {
+        width: 70%;
+        margin: auto; 
+        padding-top: 30px;  
+    }
+}
+
 .form__input {
-    
-    border: none;
-    border-bottom: 5px #52bab3 solid;
-    margin-left: 20px;
-    margin-bottom: 13px;
-    padding: 15px; 
-    height: 20px;
+    @include bottom-border;
     @include media-q (mobile) {
         width: 82%;
     }
     @include media-q (desktop) {
         
-      }
+    }
 }

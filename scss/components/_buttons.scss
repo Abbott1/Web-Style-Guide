@@ -12,27 +12,30 @@
     @include main-btn;
     background: $sec-color;
   }
+  @include media-q (desktop) {
+    
+  }
 }   
 
 .btn--success {  
   @include main-btn;
-  background: lightgreen;
+  background: $light-green;
 } 
 
 .btn--error {
   @include main-btn;
-  background: rgba(255, 100, 100, 0.7);
+  background: $error-btn-red;
 }
 
 .btn--warning { 
   @include main-btn;
-  background: lighten($color: rgb(255, 114, 0), $amount: 10%);
+  background: $warning-btn-red;
 }    
 
 .btn--info {
   @include main-btn;
-  background: rgba(124, 79, 156, 0.87);
-  @include media-q (mobile) {
-    width: 95%;
-}
+  background: $info-btn-purple;
+    @include media-q (mobile) {
+      width: 95%;
+  }
 }

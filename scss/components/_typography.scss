@@ -10,7 +10,7 @@
 .headline--primary {
     padding-left: 25px;
     color: rgba(76, 183, 178, 1);
-    font-size: 34px;
+    font-size: 25px;
 }
 
 .link {
@@ -26,4 +26,8 @@
     border-left: 7px rgba(76, 183, 178, 1) solid;
     border-radius: 4px;
     font-size: 19px;
+    width: 85%;
+    @include media-q (desktop) {
+        margin-bottom: 72px;
+      }
 }
