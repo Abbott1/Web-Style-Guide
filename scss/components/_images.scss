@@ -2,10 +2,12 @@
 .img--logo {
     padding: 20px;
     @include media-q (mobile) {
-        width: 100%;
+        width: 45%;
+        margin-left: 90px;
     }
       @include media-q (desktop) {
-        width: 50%;
+        width: 30%;
+        margin-left: 20px;
     }
 }
 
@@ -30,7 +32,7 @@
     }
     @include media-q (desktop) {
         width: 79%;
-        float: right;
+        margin-left: 62px;
     }
 }
 

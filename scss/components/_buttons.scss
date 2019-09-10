@@ -11,31 +11,49 @@
   &.theme__colors {    
     @include main-btn;
     background: $sec-color;
-  }
-  @include media-q (desktop) {
-    
+    @include media-q (desktop) {
+      width: 16%;
+      float: right;
+    }
   }
 }   
 
 .btn--success {  
   @include main-btn;
   background: $light-green;
+  @include media-q (desktop) {
+    width: 16%;
+    float: right;
+    margin-left: 20px;  
+  }
 } 
 
 .btn--error {
   @include main-btn;
   background: $error-btn-red;
+  @include media-q (desktop) {
+    width: 16%;
+    float: right;
+    margin-left: 20px;  
+  }
 }
 
 .btn--warning { 
   @include main-btn;
   background: $warning-btn-red;
+  @include media-q (desktop) {
+    width: 16%;
+    float: right;
+    margin-left: 20px;  
+  }
 }    
 
 .btn--info {
   @include main-btn;
   background: $info-btn-purple;
-    @include media-q (mobile) {
-      width: 95%;
+  @include media-q (desktop) {
+    width: 16%;
+    float: right;
+    margin-left: 20px;
   }
 }
