@@ -117,13 +117,12 @@
 .grid__col--12 {   
   &.theme__colors {
     @include main-grid;
-    background: lighten($color: rgb(102, 205, 170), $amount: 10%);
+    background: $sec-color;
     @include media-q (mobile) {
       width: 95%;
     }
     @include media-q (desktop) {
-      width: 100%;
-      text-align: center; 
+      width: 100%; 
     }
   }
 } 

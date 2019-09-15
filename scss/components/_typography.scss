@@ -9,21 +9,21 @@
 
 .headline--primary {
     padding-left: 25px;
-    color: rgba(76, 183, 178, 1);
+    color: $sec-color;
     font-size: 25px;
 }
 
 .link {
     text-decoration: none;
     font-weight: bold;
-    color: #04c4ff;
+    color: $main-color;
 }
 
 .blockquote {
     font-size: 21px;
     margin-bottom: 30px;
     padding-left: 9px;
-    border-left: 7px rgba(76, 183, 178, 1) solid;
+    border-left: 7px $sec-color solid;
     border-radius: 4px;
     font-size: 19px;
     width: 85%;

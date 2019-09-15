@@ -8,12 +8,19 @@
 */
 
 .btn--default {
-  &.theme__colors {    
+  &.theme__colors { 
     @include main-btn;
-    background: $sec-color;
     @include media-q (desktop) {
+      background: $main-color; 
       width: 16%;
-      float: right;
+      float: left;
+      margin-left: 45px;
+    /* good idea for grabing the login button
+     .Login {  
+        @include main-btn;
+        background: $sec-color; 
+        width: 100%;
+      }*/
     }
   }
 }   
@@ -23,7 +30,7 @@
   background: $light-green;
   @include media-q (desktop) {
     width: 16%;
-    float: right;
+    float: left;
     margin-left: 20px;  
   }
 } 
@@ -33,7 +40,7 @@
   background: $error-btn-red;
   @include media-q (desktop) {
     width: 16%;
-    float: right;
+    float: left;
     margin-left: 20px;  
   }
 }
@@ -43,7 +50,7 @@
   background: $warning-btn-red;
   @include media-q (desktop) {
     width: 16%;
-    float: right;
+    float: left;
     margin-left: 20px;  
   }
 }    
@@ -53,7 +60,7 @@
   background: $info-btn-purple;
   @include media-q (desktop) {
     width: 16%;
-    float: right;
+    float: left;
     margin-left: 20px;
   }
 }
